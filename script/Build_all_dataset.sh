@@ -1,6 +1,9 @@
 #! /bin/bash
 set -e
 
+# IMPORTANT: This script rebuild all the datasets and generate a new version if the sources databases
+# were updated and it will overwrite your current data
+
 cd PPInetwork_topology_view
 python Build_PPInetwork_topology_dataset.py
 echo "===== 1. Finished PPInetwork_topology_view ======"
@@ -17,10 +20,10 @@ cd ../Gene_Ontology_view
 sh Build_GeneOntology_datasets.sh
 echo "===== 4. Finished Gene_Ontology_view ====="
 
-cd ../GO_PPInetwork_view
-python GO_PPInetwork_settings.py
-python Build_Weighted_Embeddings.py
-echo "===== 5. Finished GO_PPInetwork_view ====="
+ cd ../GO_PPInetwork_view
+ python GO_PPInetwork_settings.py
+ python Build_Weighted_Embeddings.py
+ echo "===== 5. Finished GO_PPInetwork_view ====="
 
 cd ../Linear_Motifs_view
 sh Build_LinearMotifs_dataset.sh
