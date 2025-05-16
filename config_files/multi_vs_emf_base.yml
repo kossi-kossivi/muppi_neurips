@@ -7,7 +7,7 @@ views:
 pathf: "../data/dataset_compilation_to_hdf5/"
 nice: 0
 random_state: 42
-nb_cores: 32
+nb_cores: 1
 full: False
 debug: False
 res_dir: "../results"
@@ -73,7 +73,6 @@ mumbo:
 mucombo:
   base_estimator:
     decision_tree:
-      max_depth: 3
-  n_estimators: 134
-
+      max_depth: 10
+  n_estimators: 140
 

@@ -7,7 +7,7 @@ views:
 pathf: "../data/dataset_compilation_to_hdf5/"
 nice: 0
 random_state: 42
-nb_cores: 4
+nb_cores: 1
 full: False
 debug: False
 res_dir: "../results"

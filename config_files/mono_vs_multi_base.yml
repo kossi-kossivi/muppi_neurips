@@ -7,7 +7,7 @@ views:
 pathf: "../data/dataset_compilation_to_hdf5/"
 nice: 0
 random_state: 42
-nb_cores: 4
+nb_cores: 1
 full: False
 debug: False
 res_dir: "../results"
@@ -21,7 +21,7 @@ classes: ['mono_clustered', 'multi_clustered']
 type: ["multiview", "monoview"]
 algos_monoview: ["decision_tree", "random_forest", "imbalance_bagging"]
 algos_multiview: ["weighted_linear_early_fusion", "weighted_linear_late_fusion", "mumbo", "mucombo"]
-stats_iter: 5
+stats_iter: 10
 metrics:
   accuracy_score: {}
   f1_score:
