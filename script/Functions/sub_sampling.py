@@ -10,7 +10,7 @@ import yaml
 random_state = np.random.RandomState(42)
 
 # Define the number of sub-sampled datasets
-n_subsampling = 10
+n_subsampling = 1
 
 # The ratio of multi_clustered to EMFs
 ratio = 1
